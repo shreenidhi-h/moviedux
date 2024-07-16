@@ -14,7 +14,7 @@ export default function Moviecard({ movie }) {
 	return (
 		<div
 			key={movie.id}
-			className="rounded-lg transition duration-150 hover:ease-in-out overflow-hidden flex flex-col bg-teal-800 justify-center items-center m-7  max-md:m-5 shadow-lg shadow-black hover:scale-110"
+			className="rounded-lg transition duration-150 hover:ease-in-out overflow-hidden flex flex-col bg-cyan-900 justify-center items-center m-7  max-md:m-5 shadow-lg shadow-black hover:scale-110"
 		>
 			<img
 				src={`images/${movie.image}`}
