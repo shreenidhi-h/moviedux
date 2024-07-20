@@ -1,4 +1,4 @@
-export default function Moviecard({ movie }) {
+export default function Moviecard({ movie, isWatchlisted, toggleWatchlist }) {
 	const handleError = (e) => {
 		e.target.src = "./images/default.jpg";
 	};
@@ -24,13 +24,17 @@ export default function Moviecard({ movie }) {
 			<div className="text-base font-medium my-2 text-center">
 				{movie.title}
 			</div>
-			<div className="text-base font-light text-center">{movie.genre}</div>
-			<div
-				className={`bg-black my-2 font-semibold rounded-xl px-2 ${handleRating(
-					movie.rating
-				)}`}
-			>
-				{movie.rating}
+			<div className="pb-3">
+				<span className="text-base mr-2 font-light text-center">
+					{movie.genre}
+				</span>
+				<span
+					className={`bg-black font-semibold rounded-xl px-2 ${handleRating(
+						movie.rating
+					)}`}
+				>
+					{movie.rating}
+				</span>
 			</div>
 		</div>
 	);

@@ -1,17 +1,10 @@
-import { useEffect } from "react";
 import { useState } from "react";
 import Moviecard from "../Moviecard/Moviecard";
-export const Moviegrid = () => {
-	const [movies, setMovies] = useState([]);
+
+export const Moviegrid = ({ movies, watchList, toggleWatchlist }) => {
 	const [searchTerm, setSearchTerm] = useState("");
 	const [genreTerm, setGenre] = useState("All Genre");
 	const [rating, setRating] = useState("All");
-
-	useEffect(() => {
-		fetch("movies.json")
-			.then((response) => response.json())
-			.then((data) => setMovies(data));
-	}, []);
 
 	const handleGenreChange = (e) => {
 		setGenre(e.target.value);
@@ -94,7 +87,12 @@ export const Moviegrid = () => {
 			</div>
 			<div className="w-full grid grid-cols-4 max-sm:grid-cols-2 max-lg:grid-cols-3">
 				{filteredMovies.map((movie) => (
-					<Moviecard movie={movie} key={movie.id} />
+					<Moviecard
+						movie={movie}
+						key={movie.id}
+						toggleWatchlist={toggleWatchlist}
+						isWatchlisted={watchList.includes(movie.id)}
+					></Moviecard>
 				))}
 			</div>
 		</div>
