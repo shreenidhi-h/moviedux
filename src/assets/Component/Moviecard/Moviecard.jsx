@@ -14,7 +14,7 @@ export default function Moviecard({ movie, isWatchlisted, toggleWatchlist }) {
 	return (
 		<div
 			key={movie.id}
-			className="rounded-lg transition duration-150 hover:ease-in-out overflow-hidden flex flex-col bg-cyan-900 justify-center items-center md:max-lg:m-3 m-7 max-sm:m-4 max-[450px]:m-2 shadow-lg shadow-black hover:scale-110"
+			className="rounded-lg transition duration-150 hover:ease-in-out overflow-hidden flex flex-col bg-cyan-900 justify-center items-center md:max-lg:m-3 m-7 max-sm:m-4 max-[400px]:m-2 shadow-lg shadow-black hover:scale-110"
 		>
 			<img
 				src={`images/${movie.image}`}
@@ -47,7 +47,7 @@ export default function Moviecard({ movie, isWatchlisted, toggleWatchlist }) {
 					id="toggle-switch"
 					className="border-white border-2 bg-cyan-600 rounded-full cursor-pointer transition duration-200 relative"
 				>
-					<span className="px-5 mx-2 max-[450px]:text-sm">
+					<span className="px-5 mx-2 max-[400px]:text-sm">
 						{isWatchlisted ? "In Watchlist" : "Add to Watchlist"}
 					</span>
 				</span>
