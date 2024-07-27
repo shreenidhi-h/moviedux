@@ -85,13 +85,13 @@ export const Moviegrid = ({ movies, watchList, toggleWatchlist }) => {
 					</select>
 				</div>
 			</div>
-			<div className="w-full grid grid-cols-4 max-sm:grid-cols-2 max-lg:grid-cols-3">
+			<div className="w-full grid grid-cols-4 max-md:grid-cols-2 mt-5 max-lg:grid-cols-3">
 				{filteredMovies.map((movie) => (
 					<Moviecard
 						movie={movie}
 						key={movie.id}
 						toggleWatchlist={toggleWatchlist}
-						isWatchlisted={watchList.includes(movie.id)}
+						isWatchlisted={watchList && watchList.includes(movie.id)}
 					></Moviecard>
 				))}
 			</div>

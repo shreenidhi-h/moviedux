@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#toggle-switch::after {
+	content: " ";
+	@apply h-6 w-6 -bottom-0.5 -left-0.5 rounded-full bg-cyan-300 absolute transform scale-110 duration-200 transition;
+}
+
+input:checked + #toggle-switch:after {
+	@apply transform scale-110 translate-x-36 bg-amber-600 w-6;
+}
+
+input:checked + #toggle-switch {
+	@apply bg-amber-500;
+}
