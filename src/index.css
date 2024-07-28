@@ -8,7 +8,7 @@
 }
 
 input:checked + #toggle-switch:after {
-	@apply transform scale-110 translate-x-32 max-[40git0px]:translate-x-28 bg-amber-600;
+	@apply transform scale-110 translate-x-32  bg-amber-600;
 }
 
 input:checked + #toggle-switch {
