@@ -99,10 +99,10 @@ function App() {
 				<Router>
 					<nav>
 						<ul className="flex justify-center items-center m-5">
-							<li className="bg-cyan-700 hover:bg-cyan-500 font-semibold border-2 rounded-lg p-3 m-6 text-center">
+							<li className="bg-cyan-700 hover:bg-cyan-500 font-semibold border-2 rounded-lg max-md:p-2 max-md:mr-3 md:p-4 md:mr-5 lg:p-6 lg:pr-7 text-center">
 								<Link to="/">Home</Link>
 							</li>
-							<li className="bg-cyan-700 hover:bg-cyan-500 font-semibold m-6 border-2 rounded-lg p-3 text-center">
+							<li className="bg-cyan-700 hover:bg-cyan-500 font-semibold max-md:p-2 max-md:mr-3 md:p-4 md:mr-5 lg:p-6 lg:pr-7 border-2 rounded-lg  text-center">
 								<Link to="/watchlist">Watchlist</Link>
 							</li>
 						</ul>
