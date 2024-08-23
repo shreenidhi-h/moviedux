@@ -52,11 +52,11 @@ export const Moviegrid = ({ movies, watchList, toggleWatchlist }) => {
 			<input
 				type="text"
 				placeholder=" Search movies..."
-				className="w-full border-2 border-neutral-800 text-black rounded-3xl p-2 my-5 bg-slate-100"
+				className="w-full mb-16 border-2 border-neutral-800 text-black rounded-3xl p-2 my-5 bg-slate-100"
 				onChange={inputHandler}
 				value={searchTerm}
 			></input>
-			<div className="flex justify-center items-center">
+			<div className="flex justify-center mb-32 items-center">
 				<div className="rounded-lg max-w-fit bg-cyan-900 p-2 mr-3">
 					<label className="mr-2">Genre</label>
 					<select

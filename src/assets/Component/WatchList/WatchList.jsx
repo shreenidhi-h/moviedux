@@ -4,7 +4,7 @@ export default function Watchlist({ movies, watchList, toggleWatchlist }) {
 	return (
 		<div>
 			<h1 className="font-semibold text-3xl text-center">Your Watchlist</h1>
-			<div className="w-full grid grid-cols-4 max-md:grid-cols-2 mt-5 max-lg:grid-cols-3">
+			<div className="mt-10 w-full grid lg:gap-20 md:gap-16 xl:gap-28  grid-cols-auto-fit place-items-center">
 				{watchList &&
 					watchList.map((id) => {
 						const movie = movies && movies.find((movie) => movie.id === id);
