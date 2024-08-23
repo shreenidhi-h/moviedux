@@ -85,7 +85,7 @@ export const Moviegrid = ({ movies, watchList, toggleWatchlist }) => {
 					</select>
 				</div>
 			</div>
-			<div className="mt-10 w-full grid gap-7 grid-cols-auto-fit place-items-center">
+			<div className="mt-10 w-full grid lg:gap-20 md:gap-16 xl:gap-28  grid-cols-auto-fit place-items-center">
 				{filteredMovies.map((movie) => (
 					<Moviecard
 						movie={movie}

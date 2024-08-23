@@ -91,7 +91,7 @@ function App() {
 	};
 
 	return (
-		<div className="px-6">
+		<div className="max-md:px-6 md:px-16 lg:px-32 xl:px-44">
 			<Header></Header>
 
 			<Router>
